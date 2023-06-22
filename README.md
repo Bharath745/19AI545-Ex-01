@@ -19,16 +19,6 @@ Publish your portfolio
 #### Register Number : 212221230013
 ### Index.html
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bharath - Web Developer from India</title>
-  <link rel="stylesheet" href="new.css">
-</head>
-<body id="top">
 
   <!-- 
     - #HEADER
@@ -289,43 +279,6 @@ Publish your portfolio
   font-size: 2.4rem;
 }
 
-.nav-toggle-btn { font-size: 3rem; }
-
-.nav-toggle-btn .close-icon,
-.nav-toggle-btn.active .menu-icon { display: none; }
-
-.nav-toggle-btn.active .close-icon,
-.nav-toggle-btn .menu-icon { display: block; }
-
-.navbar {
-  position: absolute;
-  top: 65px;
-  left: 0;
-  width: 100%;
-  padding-inline: 20px;
-  visibility: hidden;
-  opacity: 0;
-  transition: var(--transition-2);
-}
-
-.header.nav-active .navbar {
-  visibility: visible;
-  opacity: 1;
-}
-
-.navbar-link {
-  color: var(--white);
-  font-family: var(--ff-barlow);
-  padding-block: 3px;
-  transition: var(--transition-1);
-}
-
-.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
-
-.navbar .btn {
-  margin-block-start: 15px;
-}
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -354,35 +307,6 @@ Publish your portfolio
 
 .hero-banner img { border-radius: inherit; }
 
-.hero-content {
-  text-align: center;
-  color: var(--white);
-}
-
-.hero-title {
-  font-family: var(--ff-barlow);
-  font-size: var(--fs-5);
-  font-weight: var(--fw-600);
-  line-height: 1.3;
-  margin-block-end: 14px;
-}
-
-.hero-title strong {
-  font-size: var(--fs-1);
-  font-weight: inherit;
-  margin-block-end: 8px;
-}
-
-.hero-text { margin-block-end: 25px; }
-
-.btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -397,12 +321,6 @@ Publish your portfolio
   border-radius: var(--radius-10);
   margin-block-end: 30px;
 }
-
-.about-banner > .img-cover { border-radius: inherit; }
-
-.about :is(.section-title, .section-subtitle, .section-text) { text-align: left; }
-
-.about :is(.section-title, .section-text) { margin-block-end: 30px; }
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -431,29 +349,6 @@ Publish your portfolio
 }
 
 .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
-
-.portfolio-card .card-subtitle {
-  color: var(--orange-soda);
-  margin-block-end: 5px;
-}
-
-.portfolio-card .card-title {
-  max-width: 20ch;
-  margin-block-end: 20px;
-}
-
-.portfolio-card .btn-link {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: var(--fs-6);
-  text-transform: uppercase;
-}
-
-.portfolio-card .btn-link ion-icon {
-  color: var(--orange-soda);
-  font-size: 1.6rem;
-}
 
 /*-----------------------------------*\
   #CONTACT
@@ -487,92 +382,6 @@ Publish your portfolio
   font-size: var(--fs-5);
   margin-block-end: 15px;
 }
-
-.contact-input::placeholder { color: inherit; }
-
-textarea.contact-input {
-  resize: vertical;
-  min-height: 100px;
-  height: 180px;
-  max-height: 300px;
-}
-
-.btn-submit {
-  background-color: var(--orange-soda);
-  color: var(--white);
-  font-family: var(--ff-barlow);
-  font-size: var(--fs-5);
-  width: 100%;
-  padding: 10px;
-  border-radius: var(--radius-5);
-  transition: var(--transition-2);
-}
-
-.btn-submit:is(:hover, :focus) {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.contact-item:not(:last-child) { margin-block-end: 20px; }
-
-.contact-icon {
-  background-color: var(--glaucous);
-  font-size: 2.4rem;
-  padding: 20px;
-  border-radius: 50%;
-}
-
-.contact-item-title {
-  color: var(--white);
-  font-family: var(--ff-barlow);
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
-}
-
-.contact-item-link { transition: var(--transition-1); }
-.contact-item-link:not(address):is(:hover, :focus) { color: var(--white); }
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-.footer {
-  background-color: var(--independence);
-  padding-block: 60px;
-}
-
-.copyright {
-  max-width: max-content;
-  margin-inline: auto;
-  margin-block-end: 10px;
-}
-
-.copyright-link {
-  display: inline-block;
-  transition: var(--transition-2);
-  font-weight: var(--fw-600);
-}
-
-.copyright-link:is(:hover, :focus) { color: var(--white); }
-
-.footer-list {
-  max-width: max-content;
-  margin-inline: auto;
-}
-
-.footer-list * { display: inline-block; }
-
-.footer-list > li:not(:last-child) { margin-inline-end: 40px; }
-
-.footer-link { transition: var(--transition-2); }
-
-.footer-link:is(:hover, :focus) { color: var(--white); }
 
 /*-----------------------------------*\
   #BACK TO TOP
@@ -611,7 +420,6 @@ textarea.contact-input {
 ![image](https://github.com/Bharath745/19AI545-Ex-01/assets/94508354/00e6f7e1-cd11-4212-8285-3533fd67eaa9)
 ![image](https://github.com/Bharath745/19AI545-Ex-01/assets/94508354/bced98f8-aad3-411d-b434-8d24d91c0bed)
 ![image](https://github.com/Bharath745/19AI545-Ex-01/assets/94508354/b3a20b7b-5418-4b9c-bd59-c598c17d8378)
-![image](https://github.com/Bharath745/19AI545-Ex-01/assets/94508354/c0ea2b76-d6dd-4bc1-91ac-247691a85711)
 ![image](https://github.com/Bharath745/19AI545-Ex-01/assets/94508354/6574d9eb-9ce6-4ba3-8cba-e2ba94772f60)
 
 
